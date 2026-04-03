@@ -1,36 +1,92 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# SIAKNG Lite - Project Overview
 
-## Getting Started
+## Technology Stack
 
-First, run the development server:
+**Frontend:**
+- Next.js 16
+- React 19
+- TypeScript
+- Tailwind CSS
 
+**Backend:**
+- Next.js API Routes
+- Node.js Runtime
+- Basic Authentication
+- Prisma ORM
+
+**Database:**
+- PostgreSQL
+- Prisma Client
+
+## Database Setup
+
+Sebelum menjalankan aplikasi, Anda perlu setup database PostgreSQL terlebih dahulu:
+
+### Prasyarat
+- PostgreSQL 12+ sudah terinstall dan berjalan
+- Akses ke database dengan username dan password
+
+### Langkah Setup
+
+1. **Buat database baru** (opsional, atau gunakan default):
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+createdb siakng_lite
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+2. **Konfigurasi environment variable** di `.env.local`:
+```
+DATABASE_URL="postgresql://username:password@localhost:5432/siakng_lite"
+```
+Ganti `username` dan `password` dengan kredensial PostgreSQL Anda.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+3. **Generate Prisma Client**:
+```bash
+npx prisma generate
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+4. **Jalankan migrations** untuk membuat schema database:
+```bash
+npx prisma migrate deploy
+```
 
-## Learn More
+5. **Populate database dengan test data** (opsional):
+```bash
+npm run prisma:seed
+```
 
-To learn more about Next.js, take a look at the following resources:
+## Cara Menjalankan
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+```bash
+# 1. Install dependencies
+npm install
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+# 2. Setup database (lihat Database Setup di atas)
 
-## Deploy on Vercel
+# 3. Run development server
+npm run dev
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+# 4. Open browser
+http://localhost:3000
+```
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+### 1. **Halaman Login** (`/login`)
+- Form login sederhana dengan username dan password
+- Validasi credentials melalui API backend
+- Menyimpan token auth di localStorage
+
+### 2. **Dashboard Dosen** (`/dashboard`)
+- Menampilkan daftar mata kuliah yang dibuat
+- Fitur CRUD mata kuliah:
+  - **Create**: Tambah mata kuliah baru
+  - **Read**: Lihat daftar mata kuliah
+  - **Update**: Edit informasi mata kuliah
+  - **Delete**: Hapus mata kuliah
+- Tampilan tabel dengan aksi edit/hapus untuk setiap mata kuliah
+
+### 3. **Dashboard Mahasiswa** (`/dashboard`)
+- Menampilkan daftar semua mata kuliah (read-only)
+- Filter mata kuliah berdasarkan jumlah SKS
+- Tampilan kartu (card) yang menarik untuk setiap mata kuliah
+- Statistik: Total mata kuliah, Total SKS, Jumlah Dosen Aktif
+
+

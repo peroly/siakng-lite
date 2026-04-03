@@ -1,0 +1,32 @@
+[
+  {
+    "id": 1,
+    "username": "dosen1",
+    "password": "$2a$10$jZKKC9QRCvEj3h0p8Z5R.uG2pVkMTmDMK8.pQqPqPqPqPqPqPqPqPq",
+    "role": "dosen",
+    "nama": "Dr. Ahmad Susanto"
+  },
+  {
+    "id": 2,
+    "username": "dosen2",
+    "password": "$2a$10$jZKKC9QRCvEj3h0p8Z5R.uG2pVkMTmDMK8.pQqPqPqPqPqPqPqPqPq",
+    "role": "dosen",
+    "nama": "Prof. Budi Hartanto"
+  },
+  {
+    "id": 3,
+    "username": "mahasiswa1",
+    "password": "$2a$10$jZKKC9QRCvEj3h0p8Z5R.uG2pVkMTmDMK8.pQqPqPqPqPqPqPqPqPq",
+    "role": "mahasiswa",
+    "nama": "Reza Pratama",
+    "nim": "2024001"
+  },
+  {
+    "id": 4,
+    "username": "mahasiswa2",
+    "password": "$2a$10$jZKKC9QRCvEj3h0p8Z5R.uG2pVkMTmDMK8.pQqPqPqPqPqPqPqPqPq",
+    "role": "mahasiswa",
+    "nama": "Siti Nurhaliza",
+    "nim": "2024002"
+  }
+]
