@@ -1,5 +1,5 @@
 import { NextRequest, NextResponse } from 'next/server';
-import { prisma } from '@/lib/db/prisma';
+import { findUserByUsername } from '@/lib/db/json-db';
 
 export interface AuthenticatedRequest extends NextRequest {
   user?: {
@@ -48,9 +48,7 @@ export async function authenticateRequest(
   }
 
   try {
-    const user = await prisma.user.findUnique({
-      where: { username: credentials.username },
-    });
+    const user = await findUserByUsername(credentials.username);
 
     if (!user) {
       return {

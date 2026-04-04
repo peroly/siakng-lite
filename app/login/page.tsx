@@ -100,12 +100,12 @@ export default function LoginPage() {
               <div className="bg-white p-3 rounded-lg border-l-4 border-yellow-500">
                 <p className="font-black text-yellow-700 mb-1">👨‍🏫 DOSEN</p>
                 <p className="font-mono text-black"><span className="font-bold">username:</span> dosen1</p>
-                <p className="font-mono text-black"><span className="font-bold">password:</span> password123</p>
+                <p className="font-mono text-black"><span className="font-bold">password:</span> dosen123</p>
               </div>
               <div className="bg-white p-3 rounded-lg border-l-4 border-yellow-500">
                 <p className="font-black text-yellow-700 mb-1">👨‍🎓 MAHASISWA</p>
                 <p className="font-mono text-black"><span className="font-bold">username:</span> mahasiswa1</p>
-                <p className="font-mono text-black"><span className="font-bold">password:</span> password123</p>
+                <p className="font-mono text-black"><span className="font-bold">password:</span> mhs123</p>
               </div>
             </div>
           </div>

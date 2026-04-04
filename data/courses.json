@@ -1,18 +1,29 @@
 [
   {
-    "id": 3,
-    "kode": "TIF103",
-    "nama": "Web Development",
-    "sks": 4,
+    "id": 4,
+    "kode": "TIF104",
+    "nama": "Database Management",
+    "sks": 3,
     "dosen_id": 2,
-    "createdAt": "2024-01-20"
+    "createdAt": "2024-01-20",
+    "updatedAt": "2024-01-20"
   },
   {
-    "id": 4,
-    "kode": "aaaaaaaaa",
-    "nama": "aaaaaaaaa",
-    "sks": 2,
-    "dosen_id": 1,
-    "createdAt": "2026-04-03"
+    "id": 5,
+    "kode": "TIF105",
+    "nama": "Artificial Intelligence",
+    "sks": 4,
+    "dosen_id": 3,
+    "createdAt": "2024-02-01",
+    "updatedAt": "2024-02-01"
+  },
+  {
+    "id": 6,
+    "kode": "TIF106",
+    "nama": "Mobile Development",
+    "sks": 3,
+    "dosen_id": 3,
+    "createdAt": "2024-02-01",
+    "updatedAt": "2024-02-01"
   }
 ]

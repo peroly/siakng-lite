@@ -2,31 +2,53 @@
   {
     "id": 1,
     "username": "dosen1",
-    "password": "$2a$10$jZKKC9QRCvEj3h0p8Z5R.uG2pVkMTmDMK8.pQqPqPqPqPqPqPqPqPq",
+    "password": "dosen123",
     "role": "dosen",
-    "nama": "Dr. Ahmad Susanto"
+    "nama": "Dr. Ahmad Susanto",
+    "createdAt": "2024-01-01"
   },
   {
     "id": 2,
     "username": "dosen2",
-    "password": "$2a$10$jZKKC9QRCvEj3h0p8Z5R.uG2pVkMTmDMK8.pQqPqPqPqPqPqPqPqPq",
+    "password": "dosen123",
     "role": "dosen",
-    "nama": "Prof. Budi Hartanto"
+    "nama": "Prof. Budi Hartanto",
+    "createdAt": "2024-01-01"
   },
   {
     "id": 3,
-    "username": "mahasiswa1",
-    "password": "$2a$10$jZKKC9QRCvEj3h0p8Z5R.uG2pVkMTmDMK8.pQqPqPqPqPqPqPqPqPq",
-    "role": "mahasiswa",
-    "nama": "Reza Pratama",
-    "nim": "2024001"
+    "username": "dosen3",
+    "password": "dosen123",
+    "role": "dosen",
+    "nama": "Dr. Siti Nurhaliza",
+    "createdAt": "2024-01-01"
   },
   {
     "id": 4,
-    "username": "mahasiswa2",
-    "password": "$2a$10$jZKKC9QRCvEj3h0p8Z5R.uG2pVkMTmDMK8.pQqPqPqPqPqPqPqPqPq",
+    "username": "mahasiswa1",
+    "password": "mhs123",
     "role": "mahasiswa",
-    "nama": "Siti Nurhaliza",
-    "nim": "2024002"
+    "nama": "Reza Pratama",
+    "nim": "2024001",
+    "createdAt": "2024-01-01"
+  },
+  {
+    "id": 5,
+    "username": "mahasiswa2",
+    "password": "mhs123",
+    "role": "mahasiswa",
+    "nama": "Siti Nurhaliza Putri",
+    "nim": "2024002",
+    "createdAt": "2024-01-01"
+  },
+  {
+    "id": 6,
+    "username": "mahasiswa3",
+    "password": "mhs123",
+    "role": "mahasiswa",
+    "nama": "Eka Wijaya",
+    "nim": "2024003",
+    "createdAt": "2024-01-01"
   }
 ]
+

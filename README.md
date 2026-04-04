@@ -20,38 +20,8 @@
 
 ## Database Setup
 
-Sebelum menjalankan aplikasi, Anda perlu setup database PostgreSQL terlebih dahulu:
+Untuk database, setelah saya cek lagi, ternyata prisma dan postgre di kode ini bermasalah. Sehingga data dosen, mahasiswa, dan matkul saya letakkan di file ini dengan format JSON. 
 
-### Prasyarat
-- PostgreSQL 12+ sudah terinstall dan berjalan
-- Akses ke database dengan username dan password
-
-### Langkah Setup
-
-1. **Buat database baru** (opsional, atau gunakan default):
-```bash
-createdb siakng_lite
-```
-
-2. **Konfigurasi environment variable** di `.env.local`:
-```
-DATABASE_URL="postgresql://username:password@localhost:5432/siakng_lite"
-```
-Ganti `username` dan `password` dengan kredensial PostgreSQL Anda.
-
-3. **Generate Prisma Client**:
-```bash
-npx prisma generate
-```
-
-4. **Jalankan migrations** untuk membuat schema database:
-```bash
-npx prisma migrate deploy
-```
-
-5. **Populate database dengan test data** (opsional):
-```bash
-npm run prisma:seed
 ```
 
 ## Cara Menjalankan
@@ -88,5 +58,11 @@ http://localhost:3000
 - Filter mata kuliah berdasarkan jumlah SKS
 - Tampilan kartu (card) yang menarik untuk setiap mata kuliah
 - Statistik: Total mata kuliah, Total SKS, Jumlah Dosen Aktif
+
+
+---
+
+**Version**: 1.0.0  
+**Status**: Complete (FE-001 + BE-001 + Database Migration)
 
 

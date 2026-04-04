@@ -1,0 +1,7 @@
+{
+  "datasources": {
+    "db": {
+      "url": "postgresql://postgres:Aferosa0609@localhost:5432/siakng_lite"
+    }
+  }
+}
